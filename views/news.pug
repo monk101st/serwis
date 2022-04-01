@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form(method='get' class='form-search')
+    input(type='text', name='search' value=search)
+    input(type='submit', value='Szukaj')
+
+  each article in data 
+    article 
+      h2=article.title 
+      p(class='news-p') Data: #{article.date}
+      p(class='news-p') Autor: #{article.author}
+      p(class='news-desc')=article.description
+      div(class='separator')

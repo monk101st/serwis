@@ -23,3 +23,15 @@ a {
   color: #00B7FF;
   text-decoration: none;
 }
+.separator {
+  width: 100%;
+  border-bottom: 1px solid blue;
+}
+.news-p {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 10px;
+}
+.form-search {
+  text-align: right;
+}
