@@ -19,6 +19,7 @@ var indexRouter = require('./routes/index');
 var newsRouter = require('./routes/news');
 var quizRouter = require('./routes/quiz');
 var adminRouter = require('./routes/admin');
+var apiRouter = require('./routes/api');
 /* var usersRouter = require('./routes/users'); */ //Usunięte z oryginału
 
 
@@ -51,6 +52,7 @@ app.use('/', indexRouter);
 app.use('/news', newsRouter);
 app.use('/quiz', quizRouter);
 app.use('/admin', adminRouter);
+app.use('/api', apiRouter);
 /* app.use('/users', usersRouter); */ //Usunięte z oryginału
 
 // catch 404 and forward to error handler
